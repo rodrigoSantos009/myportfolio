@@ -20,7 +20,8 @@ export interface projectsListProps {
       nodejs: boolean,
       prisma: boolean,
       mysql: boolean,
-      firebase: boolean
+      firebase: boolean,
+      tailwindcss: boolean,
     }
   } 
 }[]

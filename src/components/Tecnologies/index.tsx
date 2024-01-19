@@ -12,6 +12,7 @@ import { FaGitSquare } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { Tooltip } from "@mui/material";
 import { SiPrisma } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 
 export function Tecnologies() {
   return (
@@ -38,9 +39,10 @@ export function Tecnologies() {
         <SiMysql color="#00758F" fontSize={50} />
         <TbBrandNpm color="#CC3534" fontSize={50} />
         <FaGitSquare color="#F1502F" fontSize={50} />
-        <IoLogoGithub color="#333" style={{ fontSize: 50, color: "#fff" }} />
-        <SiPrisma color="#fff" style={{ fontSize: 50, color: "#fff" }} />
+        <IoLogoGithub color="#fff" fontSize={50} />
+        <SiPrisma color="#fff" fontSize={50} />
+        <SiTailwindcss color="#007acc" fontSize={50} />
       </div>
-    </TecnologiesContainer>
+    </TecnologiesContainer> 
   );
 }

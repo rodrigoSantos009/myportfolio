@@ -7,6 +7,7 @@ import { FaNode } from "react-icons/fa";
 import { SiPrisma } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 
 interface ProjectCardProps {
   projects: projectsListProps[];
@@ -57,6 +58,9 @@ export function ProjectCard({ projects }: ProjectCardProps) {
               )}
               {project.projectDetails.tecs.firebase && (
                 <SiFirebase color="orange" fontSize={50} />
+              )}
+              {project.projectDetails.tecs.tailwindcss && (
+                <SiTailwindcss color="#007acc" fontSize={50} />
               )}
             </div>
             <div style={{ marginTop: 20, display: "flex", gap: 15 }}>

@@ -6,14 +6,14 @@ import LoveImage from "../../assets/louve.png";
 
 export const projectsList = [
   {
-    type: "frontend",
+    type: "Full-Stack",
     projectDetails: {
       title: "Car Rental",
       description: "Projeto de um site de aluguel de carros, onde o usuário pode escolher as datas de retirada e retorno e os carros disponíveis para aquela determinada data.",
       backgroundImage: RentCarImage,
       urls: {
-        live: "https://carrentalpro.netlify.app/",
-        github: "https://github.com/rodrigoSantos009/rental-car-pro",
+        live: "https://car-rental-web-sooty.vercel.app/",
+        github: "https://github.com/rodrigoSantos009/car-rental",
       },
       tecs: {
         react: true,
@@ -21,12 +21,13 @@ export const projectsList = [
         nodejs: false,
         prisma: true,
         mysql: false,
-        firebase: false
+        firebase: false,
+        tailwindcss: true,
       }
     }
   },
   {
-    type: "frontend",
+    type: "Full-Stack",
     projectDetails: {
       title: "Habits",
       description: "Projeto de um site de hábitos, onde o usuário pode criar seus hábitos e distribuir na semana nos dias que preferir, podendo marcar como concluídos os hábitos feitos naquele determinado dia.",
@@ -41,7 +42,8 @@ export const projectsList = [
         nodejs: true,
         prisma: true,
         mysql: true,
-        firebase: false
+        firebase: false,
+        tailwindcss: false,
       }
     }
   },
@@ -61,7 +63,8 @@ export const projectsList = [
         nodejs: true,
         prisma: true,
         mysql: true,
-        firebase: false
+        firebase: false,
+        tailwindcss: false,
       }
     }
   },
@@ -81,7 +84,8 @@ export const projectsList = [
         nodejs: true,
         prisma: true,
         mysql: true,
-        firebase: false
+        firebase: false,
+        tailwindcss: false,
       }
     }
   },
@@ -101,7 +105,8 @@ export const projectsList = [
         nodejs: false,
         prisma: false,
         mysql: false,
-        firebase: true
+        firebase: true,
+        tailwindcss: false,
       }
     }
   },
@@ -121,7 +126,8 @@ export const projectsList = [
         nodejs: true,
         prisma: true,
         mysql: true,
-        firebase: false
+        firebase: false,
+        tailwindcss: false,
       }
     }
   }
