@@ -39,7 +39,7 @@ export function Tecnologies() {
         <SiMysql color="#00758F" fontSize={50} />
         <TbBrandNpm color="#CC3534" fontSize={50} />
         <FaGitSquare color="#F1502F" fontSize={50} />
-        <IoLogoGithub color="#fff" fontSize={50} />
+        <IoLogoGithub color="#fff" fontSize={50} /> 
         <SiPrisma color="#fff" fontSize={50} />
         <SiTailwindcss color="#007acc" fontSize={50} />
       </div>

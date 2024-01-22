@@ -33,7 +33,7 @@ export const projectsList = [
       description: "Projeto de um site de hábitos, onde o usuário pode criar seus hábitos e distribuir na semana nos dias que preferir, podendo marcar como concluídos os hábitos feitos naquele determinado dia.",
       backgroundImage: HabitsImage,
       urls: {
-        live: "https://habbitsday.netlify.app/",
+        live: "https://habits-web-sable.vercel.app/",
         github: "https://github.com/rodrigoSantos009/habits"
       } ,
       tecs: {
