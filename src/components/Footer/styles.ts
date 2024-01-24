@@ -8,8 +8,6 @@ export const FooterContainer = styled.div`
   align-items: center;
   background-color: rgb(9, 9, 12);
 
-  border: 1px solid red;
-
   @media (max-width: 600px) {
     flex-direction: column;
   }
