@@ -1,4 +1,4 @@
-import { NavBarContainer } from "./styles";
+import { ListMenu, NavBarContainer } from "./styles";
 import { RiMiniProgramFill } from "react-icons/ri";
 
 export function NavBar() {
@@ -19,14 +19,7 @@ export function NavBar() {
         <RiMiniProgramFill color="#fff" style={{ fontSize: 30 }} />
         Portifólio
       </p>
-      <ul
-        style={{
-          width: "30%",
-          display: "flex",
-          justifyContent: "space-between",
-          listStyle: "none",
-        }}
-      >
+      <ListMenu>
         <li>
           <a
             style={{
@@ -66,7 +59,7 @@ export function NavBar() {
             Contato
           </a>
         </li>
-      </ul>
+      </ListMenu>
       <a
         href="https://github.com/rodrigoSantos009/"
         target="_blank"

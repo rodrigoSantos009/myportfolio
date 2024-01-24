@@ -1,5 +1,5 @@
 import { projectsListProps } from "../Projects";
-import { Card, ProjectCardContainer, CardImage, Tecs } from "./styles";
+import { Cards, ProjectCardContainer, CardImage, Tecs, Card } from "./styles";
 
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -16,16 +16,9 @@ interface ProjectCardProps {
 export function ProjectCard({ projects }: ProjectCardProps) {
   return (
     <ProjectCardContainer>
-      <Card>
+      <Cards>
         {projects.map((project, index) => (
-          <div
-            style={{
-              backgroundColor: "rgb(9, 9, 12)",
-              padding: "10px 50px",
-              borderRadius: 5,
-            }}
-            key={index}
-          >
+          <Card key={index}>
             <h3 style={{ textAlign: "center", color: "#C5C5C5" }}>
               {`${project.projectDetails.title}  - (${project.type})`}
             </h3>
@@ -100,9 +93,9 @@ export function ProjectCard({ projects }: ProjectCardProps) {
                 </a>
               }
             </div>
-          </div>
+          </Card>
         ))}
-      </Card>
+      </Cards>
     </ProjectCardContainer>
   );
 }

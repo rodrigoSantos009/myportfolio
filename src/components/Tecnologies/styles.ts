@@ -5,15 +5,14 @@ export const TecnologiesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
-  flex-wrap-wrap;
-
-  @media (max-width: 600px) {
-    
-  }
 `
 
 export const Tecs = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  display: flex;
   gap: 20px;
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
 `
