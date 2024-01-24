@@ -1,5 +1,5 @@
 import { projectsListProps } from "../Projects";
-import { ProjectCardContainer } from "./styles";
+import { Card, ProjectCardContainer, CardImage, Tecs } from "./styles";
 
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -16,7 +16,7 @@ interface ProjectCardProps {
 export function ProjectCard({ projects }: ProjectCardProps) {
   return (
     <ProjectCardContainer>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+      <Card>
         {projects.map((project, index) => (
           <div
             style={{
@@ -32,15 +32,12 @@ export function ProjectCard({ projects }: ProjectCardProps) {
             <p style={{ color: "#a8a8a8" }}>
               {project.projectDetails.description}
             </p>
-            <div
+            <CardImage
               style={{
                 backgroundImage: `url(${project.projectDetails.backgroundImage})`,
-                width: 460,
-                height: 331,
-                backgroundSize: "cover",
               }}
-            ></div>
-            <div style={{ display: "flex", gap: 30, marginTop: 20 }}>
+            ></CardImage>
+            <Tecs>
               {project.projectDetails.tecs.react && (
                 <FaReact color="#61DBFB" fontSize={50} />
               )}
@@ -62,7 +59,7 @@ export function ProjectCard({ projects }: ProjectCardProps) {
               {project.projectDetails.tecs.tailwindcss && (
                 <SiTailwindcss color="#007acc" fontSize={50} />
               )}
-            </div>
+            </Tecs>
             <div style={{ marginTop: 20, display: "flex", gap: 15 }}>
               {project.projectDetails.urls.live ? (
                 <a
@@ -105,7 +102,7 @@ export function ProjectCard({ projects }: ProjectCardProps) {
             </div>
           </div>
         ))}
-      </div>
+      </Card>
     </ProjectCardContainer>
   );
 }
