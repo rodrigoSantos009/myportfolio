@@ -5,8 +5,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 
 import CurrículoPDF from "../../assets/Corriculo.pdf";
+import { useTranslation } from "react-i18next";
 
 export function Perfil() {
+  const { t } = useTranslation();
+
   return (
     <PerfilContainer>
       <section
@@ -31,8 +34,7 @@ export function Perfil() {
             fontFamily: "Poppins",
           }}
         >
-          Olá! Meu nome é{" "}
-          <span style={{ color: "blueviolet" }}>Rodrigo Santos</span>
+          {t("welcome")}
         </h1>
         <div>
           <a
@@ -61,11 +63,7 @@ export function Perfil() {
             color: "#C5C5C5",
           }}
         >
-          Desenvolvedor Full Stack em desenvolimento com paixão por tecnologia e
-          resolução de problemas, buscando oportunidades para aplicar minhas
-          habilidades técnicas e contribuir para projetos desafiadores.
-          Comprometido em aprender continuamente e agregar valor a equipes
-          dinâmicas.
+         {t("presentation")}
         </p>
         <a
           href={CurrículoPDF}
@@ -80,7 +78,7 @@ export function Perfil() {
             fontFamily: "Poppins",
           }}
         >
-          Donwload Corrículo
+          {t('cv')}
         </a>
       </section>
     </PerfilContainer>

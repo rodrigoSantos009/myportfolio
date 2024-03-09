@@ -13,8 +13,10 @@ import { IoLogoGithub } from "react-icons/io";
 import { Tooltip } from "@mui/material";
 import { SiPrisma } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 export function Tecnologies() {
+  const { t } = useTranslation();
   return (
     <TecnologiesContainer>
       <p
@@ -25,7 +27,7 @@ export function Tecnologies() {
           color: "#C5C5C5",
         }}
       >
-        Tecnologias
+        {t("tecnologies")}
       </p>
       <Tecs>
         <Tooltip title="HMTL">

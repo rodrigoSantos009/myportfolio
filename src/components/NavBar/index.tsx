@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "../LanguageSwitcher";
 import { ListMenu, NavBarContainer } from "./styles";
 import { RiMiniProgramFill } from "react-icons/ri";
 
 export function NavBar() {
+  const { t } = useTranslation();
   return (
     <NavBarContainer>
       <p
@@ -17,7 +20,7 @@ export function NavBar() {
         }}
       >
         <RiMiniProgramFill color="#fff" style={{ fontSize: 30 }} />
-        Portifólio
+        {t("portfolio")}
       </p>
       <ListMenu>
         <li>
@@ -30,7 +33,7 @@ export function NavBar() {
             }}
             href="#home"
           >
-            Home
+            {t("home")}
           </a>
         </li>
         <li>
@@ -43,7 +46,7 @@ export function NavBar() {
             }}
             href="#projects"
           >
-            Projetos
+            {t("projects")}
           </a>
         </li>
         <li>
@@ -56,10 +59,11 @@ export function NavBar() {
             }}
             href="#contacts"
           >
-            Contato
+            {t("contact")}
           </a>
         </li>
       </ListMenu>
+      <LanguageSwitcher />
       <a
         href="https://github.com/rodrigoSantos009/"
         target="_blank"
@@ -72,7 +76,7 @@ export function NavBar() {
           fontFamily: "Poppins",
         }}
       >
-        Perfil GitHub
+        {t("github")}
       </a>
     </NavBarContainer>
   );

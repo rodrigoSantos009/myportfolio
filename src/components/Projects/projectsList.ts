@@ -113,7 +113,7 @@ export const projectsList = [
   {
     type: "mobile",
     projectDetails: {
-      title: "HabitsImage",
+      title: "Habits App",
       description: "Projeto de um app de hábitos, onde o usuário pode criar seus hábitos e distribuir na semana nos dias que preferir, podendo marcar como concluídos os hábitos feitos naquele determinado dia.",
       backgroundImage: HabitsImage,
       urls: {

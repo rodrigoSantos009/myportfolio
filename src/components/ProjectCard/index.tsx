@@ -8,12 +8,14 @@ import { SiPrisma } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
   projects: projectsListProps[];
 }
 
 export function ProjectCard({ projects }: ProjectCardProps) {
+  const { t } = useTranslation();
   return (
     <ProjectCardContainer>
       <Cards>
@@ -23,7 +25,7 @@ export function ProjectCard({ projects }: ProjectCardProps) {
               {`${project.projectDetails.title}  - (${project.type})`}
             </h3>
             <p style={{ color: "#a8a8a8" }}>
-              {project.projectDetails.description}
+              {t(`${project.projectDetails.title}`)}
             </p>
             <CardImage
               style={{

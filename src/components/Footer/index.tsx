@@ -1,12 +1,13 @@
 import { FooterContainer } from "./styles";
-
 import { FaLinkedin } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { IoLogoGithub } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
   const [linkedinIconColor, setLinkedinIconColor] = useState("#a8a8a8");
   const [gmailIconColor, setGmailIconColor] = useState("#a8a8a8");
   const [gitHubIconColor, setGitHubIconColor] = useState("#a8a8a8");
@@ -28,7 +29,7 @@ export function Footer() {
 
   return (
     <FooterContainer>
-      <h2 id="contacts" style={{ color: "#a8a8a8", fontSize: 24 }}>Contatos</h2>
+      <h2 id="contacts" style={{ color: "#a8a8a8", fontSize: 24 }}>{t("contact")}</h2>
       <div>
         <a href="https://www.linkedin.com/in/santosrodrigo009/" target="_blank">
           <FaLinkedin

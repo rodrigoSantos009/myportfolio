@@ -1,8 +1,7 @@
 import { GlobalStyle } from "../styles/styles"
 import { Footer } from "./components/Footer"
 import { ScrollButton } from "./components/ScrollButton";
-import { Home } from "./pages/Home"
-
+import { Home } from "./pages/Home";
 
 function App() {
   return (

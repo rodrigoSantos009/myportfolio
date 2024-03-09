@@ -1,0 +1,19 @@
+{
+  "translation": {
+    "portfolio": "Portfolio",
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "github": "GitHub Perfil",
+    "welcome": "Hello! My name is Rodrigo Santos",
+    "presentation": "Full Stack Developer with a passion for technology and problem solving, seeking opportunities to apply my technical skills and contribute to challenging projects. Committed to continually learning and adding value.",
+    "cv": "CV download",
+    "tecnologies": "Tecnologies",
+    "Car Rental": "Design of a car rental website, where the user can choose pick-up and return dates and the cars available for that particular date.",
+    "Habits": "Design of a habits website, where the user can create their habits and distribute them throughout the week on the days they prefer, being able to mark the habits made on that particular day as completed.",
+    "SocialNetwork": "Design of an API for a social network, where users can follow and be followed by others.",
+    "Projets and Tasks": "Project of a projects and tasks API, where the user creates a project and can add as many tasks as necessary and when all tasks in a project are completed, the project will be completed.",
+    "Louve": "An application project, where the user can create schedules for rehearsals in their group, the app allows you to add people to the schedule, as well as add the playlist that will be rehearsed.",
+    "Habits App": "Project of a habits app, where the user can create their habits and distribute them throughout the week on the days they prefer, being able to mark the habits made on that particular day as completed."
+  }
+}
